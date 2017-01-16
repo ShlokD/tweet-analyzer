@@ -4,6 +4,16 @@ Polarity of Sentiments on Twitter Topics
 Description
 ------------
 
+Technologies/ Techniques Used:
+* Java
+* Javascript
+* HTML
+* CSS
+* Maven
+* NLP
+* Machine Learning
+* Spring Framework
+
 This project implements the following functionalities
 
 1. Collects tweets from Twitter Streaming API through Twitter4j library
