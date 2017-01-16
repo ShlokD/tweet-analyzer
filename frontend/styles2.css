@@ -1,0 +1,266 @@
+
+html {
+  height: 100%;
+}
+
+body{
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c539e+0,2c539e+100;Blue+3D+%232 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+  background: #45484d; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+body {
+  background-color: #000000;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+#queryText {
+  font-size: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #808080;
+  position: absolute;
+  opacity: 0.4;
+  margin-top: -22px;
+  margin-left: -125px;
+  opacity: 0;
+  filter: alpha(opacity = 0);
+}
+
+#container {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+}
+
+#input {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -120px;
+}
+
+.letterContainer {
+  display: inline;
+  white-space: nowrap;
+}
+
+.letterStatic {
+  display: inline;
+}
+
+.letterAnimTop {
+  display: inline;
+  position: absolute;
+  -webkit-animation: dropTop .1s ease;
+  -moz-animation: dropTop .1s ease;
+
+}
+
+.letterAnimBottom {
+  display: inline;
+  position: absolute;
+  -webkit-animation: dropBottom .1s ease;
+  -moz-animation: dropBottom .1s ease;
+}
+
+.blink {
+  position: static;
+  top: -5px;
+  -webkit-animation: blink 0.3s ease 0 infinite alternate;
+  -moz-animation: blink 0.3s ease 0 infinite alternate;
+}
+
+@-moz-keyframes blink {
+  from { opacity: 0 }
+  to { opactiy: 1 }
+}
+
+@-webkit-keyframes blink {
+  from { opacity: 0 }
+  to { opactiy: 1 }
+}
+
+@-moz-keyframes dropTop {
+  from {
+    -moz-transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg);
+    transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg);
+  }
+
+  to {
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg);
+    transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg);
+  }
+}
+
+@-moz-keyframes dropBottom {
+  from {
+    -moz-transform: translateY(20px) translateZ(20px) rotateX(-90deg);
+    transform: translateY(20px) translateZ(20px) rotateX(-90deg);
+  }
+
+  to {
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes dropTop {
+  from { -webkit-transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg); }
+  to { -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg); }
+}
+
+@-webkit-keyframes dropBottom {
+  from { -webkit-transform: translateY(20px) translateZ(20px) rotateX(-90deg); }
+  to { -webkit-transform: rotateX(0deg); }
+}
+
+$dark:  #333030;
+$ocean:  #2b90d9;
+$grass: #3ac569;
+$snow: #FFFFFF;
+$salmon: #ff7473;
+$sun: #feee7d;
+$alge: #79a8a9;
+$flower: #353866;
+
+// font import
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+
+// font
+$font-face: 'Roboto', sans-serif;
+
+// reset
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// body styles
+body {
+  background: white;
+  font-family: $font-face;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  line-height: 1;
+
+  box-sizing: border-box;
+
+  border: 20px solid whitesmoke;
+
+  @media (min-width: 992px) {
+    border-width: 30px;
+  }
+}
+
+.btn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	padding: 20px 30px;
+	background: -moz-linear-gradient(
+		top,
+		#fffaff 0%,
+		#ffffff 50%,
+		#fafafa);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#fffaff),
+		color-stop(0.50, #ffffff),
+		to(#fafafa));
+	-moz-border-radius: 27px;
+	-webkit-border-radius: 27px;
+	border-radius: 27px;
+	border: 3px solid #6b6b6b;
+	-moz-box-shadow:
+		0px 1px 3px rgba(135,135,135,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(135,135,135,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(135,135,135,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(0,0,0,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+
+
+#submitQueryButton{
+  display:inline-block;
+}
+#stopButton{
+  display: inline-block;
+  margin-left:20px;
+}
+
+#buttonContainer{
+  margin-top: 130px;
+  margin-left: 640px;
+}
+
+#sentiment{
+  width:60%;
+  height:450px;
+}
+#stories-list{
+  width:60%;
+  height:450px;
+  margin-top:1px;
+}
+
+#positivekeywords{
+  width:400px;
+  height:300px;
+}
+#entities{
+  width:400px;
+  height:300px;
+}
+#negativekeywords{
+  width:400px;
+  height:300px;
+  margin-top: 1px;
+}
+
+#keywords{
+  float:right;
+  margin-right: 160px;
+  margin-top:-908px;
+}
+
+#analysis{
+  margin-left: 100px;
+}
+
+#report{
+  margin-top: 20px;
+  margin-bottom:50px;
+}
+.analytics{
+  border: 2px rgb(89,89,89) solid;
+
+background: rgb(255,255,255);
+
+}

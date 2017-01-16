@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title> Topics Polarity </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="inputStyle.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src = "utilities.js"></script>
+  <script src="bower_components/jqcloud2/dist/jqcloud.min.js"></script>
+  <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body>
+  <div id="container">
+    <div id="input"></div>
+    <input type="text" id="queryText">
+  </div>
+  <p hidden id="queryStatus"></p>
+  <div id="buttonContainer">
+  <button id="submitQueryButton" class="btn">Submit</button>
+  <button  id="stopButton" class="btn">Stop</button>
+</div>
+
+<div id="report">
+  <div id="analysis">
+  <div id="sentiment" class="analytics"></div>
+  <div id="stories-list" class="analytics"></div>
+</div>
+<div id="keywords">
+  <div id="positivekeywords" class="analytics"></div>
+  <div id="negativekeywords" class="analytics"></div>
+  <div id="entities" class="analytics"></div>
+</div>
+</body>
+</html>
